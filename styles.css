@@ -1,0 +1,175 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1f1; /* Light off-white background */
+  }
+  
+  /* Container for page content */
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Main heading */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Deep charcoal color */
+    font-weight: 700;
+  }
+  
+  /* Styling the highlighted part of the heading */
+  h1 span {
+    color: #e67e22; /* Warm gold accent */
+    text-decoration: underline;
+  }
+  
+  /* Search input */
+  #searchInput {
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  /* Product grid styling */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Individual product card styling */
+  .product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    max-width: 100%;
+    width: 280px;
+    background: linear-gradient(145deg, #f7f7f7, #e0e0e0); /* Soft gradient background */
+  }
+  
+  /* Hover effects for the product card */
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for the product images */
+  .product-card img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Product name */
+  .product-card h3 {
+    font-size: 1.7rem;
+    margin: 15px 0;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  /* Product price */
+  .product-card .price {
+    color: #e67e22; /* Warm gold accent for price */
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  
+  /* Product description text */
+  .product-card p.text-black {
+    color: #7f8c8d; /* Muted gray color for description */
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .product-card button {
+    margin: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Add to Cart button styling */
+  .product-card button.add-to-cart {
+    background-color: #e67e22; /* Warm gold */
+    color: #fff;
+  }
+  
+  /* Hover effect for Add to Cart button */
+  .product-card button.add-to-cart:hover {
+    background-color: #d35400; /* Darker shade of gold */
+    transform: translateY(-4px);
+  }
+  
+  /* Buy Now button styling */
+  .product-card button.buy-now {
+    background-color: #2c3e50; /* Charcoal color */
+    color: #fff;
+  }
+  
+  /* Hover effect for Buy Now button */
+  .product-card button.buy-now:hover {
+    background-color: #34495e; /* Lighter charcoal shade */
+    transform: translateY(-4px);
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    #searchInput {
+      width: 80%;
+    }
+  
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .product-card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .product-card {
+      width: 100%;
+    }
+  
+    #searchInput {
+      width: 90%;
+    }
+  
+    .product-card img {
+      height: 180px;
+    }
+  }
+  
