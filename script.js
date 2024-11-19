@@ -3,9 +3,9 @@ const products = [
     { name: "Jacket", price: 80, discription: "Jacketss" , image: "Assets/p2.png" },
     { name: "Dress", price: 68, discription: "Dresss" , image: "Assets/p4.png" },
     { name: "Frawk", price: 70, discription: "Capss" , image: "Assets/p7.png" },
-    { name: "Shirt", price: 75, discription: "Shirtsss" , image: "Assets/p1.png" },
-    { name: "Jacket", price: 80, discription: "Jacketss" , image: "Assets/p2.png" },
-    { name: "Dress", price: 68, discription: "Dresss" , image: "Assets/p4.png" },
+    { name: "Tracksuit", price: 100, discription: "Tracksuit" , image: "Assets/dom-hill-nimElTcTNyY-unsplash.jpg" },
+    { name: "T Shirt", price: 99, discription: "T Shirt" , image: "Assets/ian-dooley-wtFc4o4Bir8-unsplash.jpg" },
+    { name: "Cap", price: 68, discription: "Cap" , image: "Assets/zakaria-issaad-Pg7m1VqJ-b4-unsplash.jpg" },
     { name: "Frawk", price: 70, discription: "Capss" , image: "Assets/p7.png" },
   ];
   
@@ -30,6 +30,12 @@ const products = [
     });
   }
 
+  var search = document.getElementById("searchInput");
+
   displayProducts(products);
-  
-// new
+
+  // function myFunction(){
+  //  var a = search.value ;
+  //  if()
+  // }
+
