@@ -34,8 +34,12 @@ const products = [
 
   displayProducts(products);
 
-  // function myFunction(){
-  //  var a = search.value ;
-  //  if(a = )
-  // }
+function myFunction(){
+    var a = search.value.toLowerCase(); 
+if(search.value.toLowerCase().includes(products.name)){
+  console.log("jasbdhkdfa");
+}else{
+  console.log("no");
+}
+}
 
