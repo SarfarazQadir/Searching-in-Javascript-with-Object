@@ -35,11 +35,13 @@ const products = [
   displayProducts(products);
 
 function myFunction(){
-    var a = search.value.toLowerCase(); 
-if(search.value.toLowerCase().includes(products.name)){
-  console.log("jasbdhkdfa");
-}else{
-  console.log("no");
-}
+  const result = Object.keys(products).filter(key => key.includes(string)).some(key => products[key] === valueToMatch)
+  console.log(result) 
+//   var a = search.value.toLowerCase(); 
+// if(a.includes(products.name)){
+//   console.log("jasbdhkdfa");
+// }else{
+//   console.log("no");
+// }
 }
 
