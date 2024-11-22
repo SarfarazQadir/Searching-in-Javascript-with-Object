@@ -34,17 +34,36 @@ const products = [
 
   displayProducts(products);
 
-function myFunction(){
-  const result = Object.keys(products).filter(key => key.includes(string)).some(key => products[key] === valueToMatch)
-  console.log(result) 
+// function myFunction(){
+//   const result = Object.keys(products).filter(key => key.includes(string)).some(key => products[key] === valueToMatch)
+//   console.log(result);
+
+//   // let a = Object.values(products).find((search) => {
+//   //   return search.values == "Shirt";
+    
+//   };
+  
+//   console.log(a);
 //   var a = search.value.toLowerCase(); 
 // if(a.includes(products.name)){
 //   console.log("jasbdhkdfa");
 // }else{
 //   console.log("no");
 // }
-}
+//}
 
+
+function myFunction (){
+  // array.find(function(currentValue, index, arr),thisValue);
+  var a = search.value.toLowerCase
+  var b = products.filter(function(product){
+    
+    return product.name.toLowerCase().includes(a);
+    
+  })
+    console.log(b);
+    
+}
 
 
 // hello
